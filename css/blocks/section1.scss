@@ -1,0 +1,51 @@
+.section1-container{
+    // background-image: url("../../src/img/FONDO\ DEFINITIVO.png");
+    // background-attachment: fixed;
+}
+
+.section1 {
+    width: 90%;
+    margin: 0 auto 0 auto;   
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    //justify-content: space-around;
+
+    &__img-container{
+        display: block;
+        width: 40%;
+        height: 100vh;
+        position: sticky;
+        top: 70px;
+        z-index: 200;
+        
+        
+        .img{
+            position: absolute;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://i.ibb.co/q1X8Kbg/Imagen-1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+        }
+    }
+
+    &__text{
+        width: 60%;
+        text-align: left;
+        padding: 80px ;
+    }
+
+    &__p{
+        font-size: 1.6em;
+        color: white;
+        margin-bottom: 30px;
+    }
+    &__p:first-of-type::first-letter{
+        font-size: 300%;
+        line-height: 30px;
+        color: var(--yellow);
+    }
+}

@@ -1,0 +1,36 @@
+.footer{
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    .redes{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .instagram{
+        display: flex;
+
+        &-icon{
+            content: url("https://i.ibb.co/v4kkRH3/instagram.png");
+        }
+
+        &-text{
+            margin: 0 10px 0 4px;
+            color: white;
+            font-size: 1.1em;
+        }
+    }
+}

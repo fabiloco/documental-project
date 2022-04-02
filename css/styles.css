@@ -1,0 +1,382 @@
+@import 'normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body {
+  font-size: 13px;
+  background-image: url("https://i.ibb.co/g63sNBS/FONDO-DEFINITIVO.png");
+  background-attachment: fixed;
+  font-family: var(--font);
+  font-weight: 400;
+  line-height: 30px;
+  overflow-x: hidden;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: #f2c500;
+  --yellowA: #e6c40550;
+  --font:"Roboto", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title img {
+  width: 30px;
+  height: 30px;
+}
+.header__title h2 {
+  margin: 10px;
+}
+.header__links .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__links .links a {
+  text-decoration: none;
+}
+.header__links .links a .link {
+  list-style-type: none;
+  padding: 20px 20px 16px 20px;
+  margin: 0;
+  color: white;
+  transition: color 300ms, border 300ms;
+  border-bottom: 4px solid black;
+}
+.header__links .links a .link:hover {
+  color: var(--yellow);
+  border-bottom: 4px solid var(--yellow);
+}
+
+.section-start {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+.section-start__bg {
+  width: 100%;
+  height: 100%;
+}
+.section-start__bg .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../res/img/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.section-start__title-container {
+  width: 700px;
+  z-index: 200;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-start__title-container .section-start__title img {
+  width: 50vw;
+}
+.section-start__title-container .section-start__subtitle {
+  color: white;
+  font-size: 3.4em;
+  font-weight: 500;
+  margin-top: 64px;
+}
+
+.section1 {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.section1__img-container {
+  display: block;
+  width: 40%;
+  height: 100vh;
+  position: sticky;
+  top: 70px;
+  z-index: 200;
+}
+.section1__img-container .img {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../res/img/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section1__text {
+  width: 60%;
+  text-align: left;
+  padding: 80px;
+}
+.section1__p {
+  font-size: 1.6em;
+  color: white;
+  margin-bottom: 30px;
+}
+.section1__p:first-of-type::first-letter {
+  font-size: 300%;
+  line-height: 30px;
+  color: var(--yellow);
+}
+
+.section2 {
+  display: flex;
+  height: 100vh;
+}
+.section2__video-container {
+  background-image: linear-gradient(30deg, rgba(255, 0, 0, 0), var(--yellowA));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+.section2__video-container img {
+  opacity: 1;
+  width: 80px;
+}
+.section2__video-container img:hover {
+  cursor: pointer;
+}
+.section2__video-container p {
+  color: white;
+  opacity: 1;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+.section2__img-container {
+  width: 80%;
+  height: 100%;
+}
+.section2__img-container .img {
+  background-image: url("../res/img/3.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section2__img-container .img .imgText {
+  background-image: url("https://i.ibb.co/LNK88K7/Texto-1.png");
+  background-size: cover;
+  width: 60%;
+  height: 40%;
+  bottom: 40px;
+  left: 40px;
+  position: absolute;
+}
+
+.section3 {
+  height: 100%;
+  border-top: 3px solid var(--yellow);
+  border-bottom: 3px solid var(--yellow);
+  background-image: url("../res/img/4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.triangle {
+  width: 40px;
+  content: url("https://i.ibb.co/h7yspCX/triangle.png");
+}
+
+.section4 {
+  height: 100%;
+}
+.section4__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.section5 {
+  background-image: url("../res/img/5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 60vh;
+}
+
+.section6-container {
+  border-bottom: 3px solid var(--yellow);
+}
+
+.section6 {
+  width: 90%;
+  height: 100%;
+}
+.section6__img-container {
+  width: 65%;
+}
+.section6__img-container .img {
+  background-image: url("../res/img/6.jpg");
+}
+.section6__text {
+  width: 35%;
+}
+
+.triangle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section7-container {
+  width: 100%;
+}
+
+.section7 {
+  height: 100%;
+}
+.section7__text {
+  width: 70%;
+  margin: 0 auto;
+}
+.section7__graphs {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section7__graphs .graph {
+  margin-bottom: 40px;
+}
+.section8 {
+  width: 100vw;
+  height: 100vh;
+}
+.section8 .video-container {
+  width: 100%;
+  height: 100%;
+}
+.section8 .video-container .video {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer h2 {
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+.footer p {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.footer .redes {
+  display: flex;
+  margin-top: 30px;
+}
+.footer .instagram {
+  display: flex;
+}
+.footer .instagram-icon {
+  content: url("https://i.ibb.co/v4kkRH3/instagram.png");
+}
+.footer .instagram-text {
+  margin: 0 10px 0 4px;
+  color: white;
+  font-size: 1.1em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 15% auto;
+  padding: 10px;
+  width: 1250px;
+  height: 700px;
+  border-radius: 15px;
+}
+.modal .close-container {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  text-align: right;
+}
+.modal .close {
+  color: #aaa;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: right;
+}
+.modal .close:hover, .modal .close:focus {
+  color: crimson;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
